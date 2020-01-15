@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]- ARIA</title>
+
+    <!-- ASSETS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--===============================================================================================-->
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="https://cihr-irsc.gc.ca/images/leaf-cihr-colour-portrait-en.jpg" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" asp-page="/Step1">
+                        Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.researchnet-recherchenet.ca/" target="_blank">ResearchNet</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <span style="font-size: 36pt; font-family: 'Bungee Hairline', cursive;">ARIA*&nbsp;&nbsp;</span>
+
+                @if (Context.Request.Path.Value.ToString() != "/Login")
+                {
+                    <ul id="profileCard" class="nav justify-content-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i> My Profile
+                            </a>
+                            <div class="dropdown-menu" style="right: 0 !important; left: auto !important;" aria-labelledby="navbarDropdown">
+                                <div class="card dropdown-item" style="width: 18rem;">
+                                    <img class="card-img-top rounded-circle img-fluid" src="https://pbs.twimg.com/profile_images/378800000405120336/141fe6e51419730d9288e88ca79cb43d_400x400.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chris Gamberg</h5>
+                                        <p class="card-text">Solution Architect
+                                            <br/>Digital Services and Security
+                                        </p>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="card-link"><i class="fa fa-pie-chart"></i> Audit Reports</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="card-link"><i class="fa fa-language"></i> Fran&ccedil;ais</a>
+                                        </li>
+                                        <li class="list-group-item"><a asp-page="/Login" class="card-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                }
+            </form>
+        </div>
+    </nav>
+
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+
+    <footer class="border-top footer text-muted text-center">
+        <div class="container">
+            &copy; 2020 - ARIA_Net - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
