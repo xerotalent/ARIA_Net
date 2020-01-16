@@ -135,7 +135,7 @@
 
                 <!-- Application List Grid -->
                 <h2 class="display-5-heading">High/Low Score Summary</h2>
-                <table class="table table-sm table-striped table-responsive" style="width: 100%;">
+                <table class="table table-sm table-striped table-responsive">
                     <thead style="background-color: white; border: white;">
                         <tr>
                             <th scope="col" style="color: #006200;">Rank</th>
@@ -209,7 +209,7 @@
 
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
-                        <a class="btn btn-primary btn-block" href="https://app.powerbi.com/view?r=eyJrIjoiYThjMmVjZTgtZjEzYy00YmE4LTgyYWYtZDg0N2E3NDIxNjNmIiwidCI6IjFlYmZjY2Q2LTdkNDQtNDgwNi04ZmZjLWJiNTIxZjNhY2MyNCJ9" target="_blank"><i class="fa fa-bar-chart"></i> Competition Analytics</a>
+                        <a class="btn btn-primary btn-block" href="#" data-target="#modalAnalytics" data-toggle="modal"><i class="fa fa-bar-chart"></i> Competition Analytics</a>
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
@@ -263,6 +263,34 @@
                 <div id="panelEISCommands" class="modal-footer">
                     <button type="button" class="btn btn-warning" id="cmdEISCancel" data-dismiss="modal">Cancel</button>&nbsp;
                     <button type='button' class="btn btn-success" id="cmdEIS"><i class="fa fa-upload"></i> Send To RNet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Competition Analytics Modal -->
+    <div class="modal fade alert" role="alert" id="modalAnalytics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelb" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading" id="exampleModalLabelb">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Competition Analytics</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+
+                    <!-- Here -->
+                    <iframe width="750" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYThjMmVjZTgtZjEzYy00YmE4LTgyYWYtZDg0N2E3NDIxNjNmIiwidCI6IjFlYmZjY2Q2LTdkNDQtNDgwNi04ZmZjLWJiNTIxZjNhY2MyNCJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>&nbsp;
                 </div>
             </div>
         </div>
