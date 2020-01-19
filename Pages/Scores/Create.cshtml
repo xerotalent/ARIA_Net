@@ -1,0 +1,76 @@
+@page
+@model ARIA_Net.Pages.Scores.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Application_Score</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Competition_ID" class="control-label"></label>
+                <input asp-for="Application_Score.Competition_ID" class="form-control" />
+                <span asp-validation-for="Application_Score.Competition_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Project_Title" class="control-label"></label>
+                <input asp-for="Application_Score.Project_Title" class="form-control" />
+                <span asp-validation-for="Application_Score.Project_Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.NPI_Last_Name" class="control-label"></label>
+                <input asp-for="Application_Score.NPI_Last_Name" class="form-control" />
+                <span asp-validation-for="Application_Score.NPI_Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.NPI_First_Name" class="control-label"></label>
+                <input asp-for="Application_Score.NPI_First_Name" class="form-control" />
+                <span asp-validation-for="Application_Score.NPI_First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Referee_Cd" class="control-label"></label>
+                <input asp-for="Application_Score.Referee_Cd" class="form-control" />
+                <span asp-validation-for="Application_Score.Referee_Cd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Reviewer_Last_Name" class="control-label"></label>
+                <input asp-for="Application_Score.Reviewer_Last_Name" class="form-control" />
+                <span asp-validation-for="Application_Score.Reviewer_Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Reviewer_First_Name" class="control-label"></label>
+                <input asp-for="Application_Score.Reviewer_First_Name" class="form-control" />
+                <span asp-validation-for="Application_Score.Reviewer_First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Criteria_Name" class="control-label"></label>
+                <input asp-for="Application_Score.Criteria_Name" class="form-control" />
+                <span asp-validation-for="Application_Score.Criteria_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Score" class="control-label"></label>
+                <input asp-for="Application_Score.Score" class="form-control" />
+                <span asp-validation-for="Application_Score.Score" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application_Score.Comments" class="control-label"></label>
+                <input asp-for="Application_Score.Comments" class="form-control" />
+                <span asp-validation-for="Application_Score.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
