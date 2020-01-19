@@ -38,3 +38,5 @@
 /Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/obj/Debug/netcoreapp3.0/ARIA_Net.dll
 /Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/obj/Debug/netcoreapp3.0/ARIA_Net.pdb
 /Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/obj/Debug/netcoreapp3.0/ARIA_Net.csproj.CopyComplete
+/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
+/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
