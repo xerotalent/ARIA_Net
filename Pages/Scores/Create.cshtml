@@ -1,0 +1,76 @@
+@page
+@model ARIA_Net.Pages.Scores.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Scoring_History</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Competition_Cd" class="control-label"></label>
+                <input asp-for="Scoring_History.Competition_Cd" class="form-control" />
+                <span asp-validation-for="Scoring_History.Competition_Cd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Project_Title" class="control-label"></label>
+                <input asp-for="Scoring_History.Project_Title" class="form-control" />
+                <span asp-validation-for="Scoring_History.Project_Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.NPI_Last_Name" class="control-label"></label>
+                <input asp-for="Scoring_History.NPI_Last_Name" class="form-control" />
+                <span asp-validation-for="Scoring_History.NPI_Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.NPI_First_Name" class="control-label"></label>
+                <input asp-for="Scoring_History.NPI_First_Name" class="form-control" />
+                <span asp-validation-for="Scoring_History.NPI_First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Referee_Cd" class="control-label"></label>
+                <input asp-for="Scoring_History.Referee_Cd" class="form-control" />
+                <span asp-validation-for="Scoring_History.Referee_Cd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Reviewer_Last_Name" class="control-label"></label>
+                <input asp-for="Scoring_History.Reviewer_Last_Name" class="form-control" />
+                <span asp-validation-for="Scoring_History.Reviewer_Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Reviewer_First_Name" class="control-label"></label>
+                <input asp-for="Scoring_History.Reviewer_First_Name" class="form-control" />
+                <span asp-validation-for="Scoring_History.Reviewer_First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Criteria_Name" class="control-label"></label>
+                <input asp-for="Scoring_History.Criteria_Name" class="form-control" />
+                <span asp-validation-for="Scoring_History.Criteria_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Score" class="control-label"></label>
+                <input asp-for="Scoring_History.Score" class="form-control" />
+                <span asp-validation-for="Scoring_History.Score" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scoring_History.Comments" class="control-label"></label>
+                <input asp-for="Scoring_History.Comments" class="form-control" />
+                <span asp-validation-for="Scoring_History.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
