@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ARIA_Net.Models
 {
-    public class Application_Score
+    public class Scoring_History
     {
         public int ID { get; set; }        
         public string Competition_ID { get; set; }

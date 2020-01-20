@@ -10,6 +10,6 @@ namespace ARIA_Net.Data
         {
         }
 
-        public DbSet<ARIA_Net.Models.Application_Score> Application_Score {get; set;}
+        public DbSet<ARIA_Net.Models.Scoring_History> Scoring_History {get; set;}
     }
 }

@@ -14344,16 +14344,6 @@
   "RootNamespace": "ARIA_Net",
   "Documents": [
     {
-      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Edit.cshtml",
-      "TargetPath": "Pages/Scores/Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Create.cshtml",
-      "TargetPath": "Pages/Scores/Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages/_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14389,18 +14379,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Details.cshtml",
-      "TargetPath": "Pages/Scores/Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/RNetSuccess.cshtml",
       "TargetPath": "Pages/RNetSuccess.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Delete.cshtml",
-      "TargetPath": "Pages/Scores/Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14411,11 +14391,6 @@
     {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Index.cshtml",
       "TargetPath": "Pages/Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Index.cshtml",
-      "TargetPath": "Pages/Scores/Index.cshtml",
       "FileKind": "mvc"
     },
     {
