@@ -9043,7 +9043,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting elements containing attributes with URL expected values.\n            </summary>\n            <remarks>Resolves URLs starting with '~/' (relative to the application's 'webroot' setting) that are not\n            targeted by other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s. Runs prior to other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s to ensure\n            application-relative URLs are resolved.</remarks>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -14344,6 +14344,16 @@
   "RootNamespace": "ARIA_Net",
   "Documents": [
     {
+      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Edit.cshtml",
+      "TargetPath": "Pages/Scores/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Create.cshtml",
+      "TargetPath": "Pages/Scores/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages/_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14379,8 +14389,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Details.cshtml",
+      "TargetPath": "Pages/Scores/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/RNetSuccess.cshtml",
       "TargetPath": "Pages/RNetSuccess.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Delete.cshtml",
+      "TargetPath": "Pages/Scores/Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14391,6 +14411,11 @@
     {
       "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Index.cshtml",
       "TargetPath": "Pages/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/chrisgamberg/Documents/Visual Studio Code/ARIA_Net/Pages/Scores/Index.cshtml",
+      "TargetPath": "Pages/Scores/Index.cshtml",
       "FileKind": "mvc"
     },
     {

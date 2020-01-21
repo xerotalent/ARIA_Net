@@ -48,20 +48,20 @@
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <label for="ddProgram">Program</label>
                             <select class="form-control" id="ddProgram">
-                                    <option>- Select Program - </option>
-                                    <option>Catalyst Grants</option>
-                                    <option>Doctoral Research Awards</option>
-                                    <option>Fellowships</option>
-                                    <option>Operating Grants</option>
-                                    <option>Other</option>
+                                    <option value="0">- Select Program - </option>
+                                    <option value="1">Catalyst Grants</option>
+                                    <option value="2">Doctoral Research Awards</option>
+                                    <option value="3">Fellowships</option>
+                                    <option value="4">Operating Grants</option>
+                                    <option value="5">Other</option>
                                   </select>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <label for="ddCompetition">Competition</label>
-                            <select class="form-control" id="ddCompetition">
-                                    <option>- Select Competition -</option>
-                                    <option>Travel Awards: 2019 - Summer</option>
-                                    <option>Travel Awards: 2019 - Winter</option>
+                            <select class="form-control" id="ddCompetition" disabled>
+                                    <option value="0">- Select Competition -</option>
+                                    <option value="1">Travel Awards: 2019 - Summer</option>
+                                    <option value="2">Travel Awards: 2019 - Winter</option>
                                   </select>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-10 col-xl-10 col-sm-12"></div>
                     <div class="col-md-2 col-lg-2 col-xl-2 col-sm-12">
-                        <a id="nextButton" class="btn btn-primary btn-block float-right" style="color: white!important;" href="#" data-toggle="modal" data-target="#modalLoading">Next >></a>
+                        <a id="nextButton" class="btn btn-primary btn-block float-right" style="color: white!important;" href="#" data-toggle="modal" data-target="#modalLoading" >Next >></a>
                         <br />
                         <br />
                     </div>
@@ -96,9 +96,27 @@
                 </button>
                     </div>
                     <div class="modal-body">
-                        <p>
-                            Detailed information on how the algorhithm works goes here!
+                        
+                        <h1>ARIA's Algorithm</h1>
+                        <p>                            
+                            ARIA uses <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">Natural Language Processing</a> to mine keywords from application synopsis', and applying <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" target="_blank"><i>k</i>-Nearest Neighbours</a> and 
+                            <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier" target="_blank">Naive Bayes</a> algorithms to produce scores based on program criteria using real, historical past Peer Reviewer Scores.
+                        </p>
 
+                        <hr />
+
+                        <h2><i class="fa fa-github"></i> Contribute on GitHub!</h2>
+                        <p>
+                            In compliance with the Government of Canada's <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108">Open Government Directive</a>,
+                            our code is open and available for contribution:
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/xerotalent/ARIA_Net" target="_blank">Web Application Codebase</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/xerotalent/ARIA_Net" target="_blank">R Script Algorithm</a>
+                                </li>
+                            </ul>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -133,6 +151,7 @@
         <!-- Page-Level jQuery scripts -->
         @section Scripts {
                 <script>
+                 
 
                 
                     $('#nextButton').click(function(e) {
@@ -144,6 +163,19 @@
 
 
                     });
+
+
+                    $(function() {
+                        $("#ddProgram").change(function() {
+                            if ($(this).val() == "0") {
+                                $("#ddCompetition").prop("disabled", true);
+                            
+                            }
+                            else
+                                $("#ddCompetition").prop("disabled", false);
+                          
+                        });
+                    });                    
             
                 </script>
 
