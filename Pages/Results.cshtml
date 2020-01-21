@@ -10,7 +10,7 @@
 
 
         <!-- JUMBOTRON-->
-        <div class="jumbotron" style="padding: 2rem 2rem !important; background-image: url('https://images.pexels.com/photos/2276928/pexels-photo-2276928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-position: 50% 45%; background-size: cover;">
+        <div class="jumbotron" style="padding: 2rem 2rem !important; background-image: url('https://images.pexels.com/photos/2276928/pexels-photo-2276928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-position: 50% 50%; background-size: cover;">
 
             <h1 class="display-4">
                 Other - Travel Awards: 2019 - Summer
@@ -99,12 +99,12 @@
                 <div class="col-6 text-center col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Horizontal Bar Chart -->
                     <h4 class="display-6-heading">Provincial Distribution</h4>
-                    <canvas id="horizontalBar" width="442" height="130"></canvas>
+                    <canvas id="horizontalBar" width="442" height="130" style="background-color: rgba(211, 211, 211, 0.5);"></canvas>
                 </div>
                 <div class="col-6 text-center col-6 text-center d-none d-sm-none d-md-inline d-lg-inline">
                     <!-- Doughnut Chart-->
                     <h4 class="display-6-heading">Institute Amounts Comparison</h4>
-                    <canvas id="radarChart" width="515" height="257" style="display: block;width: 515px;height: 257px;"></canvas>
+                    <canvas id="radarChart" width="515" height="257" style="display: block;width: 515px;height: 257px; background-color: rgba(211, 211, 211, 0.5);"></canvas>
                 </div>
             </div>
 
@@ -147,17 +147,17 @@
                             <th scope="col" style="color: #006200;">App. #</th>
                             <th scope="col" style="color: #006200;">Applicant</th>
                             <th scope="col" style="color: #006200;">Project Title</th>
-                            <th scope="col" style="color: #006200;">Details</th>
+                            <th scope="col" class="text-center" style="color: #006200;">Details</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr style="background-color:lightgreen">
-                            <td align="center">1</td>
-                            <td align="center">30.0</td>
-                            <th scope="row">417959</th>
-                            <td>Jon Theodore</td>
-                            <td>The role of fat-free mass in metabolic health: An opposing perspective</td>
-                            <td>
+                            <td width="5%" align="center">1</td>
+                            <td width="10%" align="center">30.0</td>
+                            <th width="5%" scope="row">417959</th>
+                            <td width="15%">Jon Theodore</td>
+                            <td width="50%">The role of fat-free mass in metabolic health: An opposing perspective</td>
+                            <td width="15%">
                                 <a href="#" class="btn btn-success btn-sm btn-block" data-target="#modal417959" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
                             </td>
                         </tr>
@@ -172,7 +172,7 @@
                             </td>
                         </tr>
                         <tr style="background-color: lightgreen">
-                            <td align="center">51</td>
+                            <td align="center">3</td>
                             <td align="center">29.2</td>
                             <th scope="row">418063</th>
                             <td>Maynard James Keenan</td>
@@ -182,7 +182,7 @@
                             </td> 
                         </tr>     
                         <tr style="background-color: salmon">
-                            <td align="center">50</td>
+                            <td align="center">350</td>
                             <td align="center">28.0</td>
                             <th scope="row">417939</th>
                             <td>Troy Van Leuween</td>
@@ -192,7 +192,7 @@
                             </td> 
                         </tr>                                           
                         <tr style="background-color: salmon">
-                            <td align="center">49</td>
+                            <td align="center">351</td>
                             <td align="center">26.4</td>
                             <th scope="row">301837</th>
                             <td>Michael Shumacher</td>
@@ -202,7 +202,7 @@
                             </td>                               
                         </tr>
                         <tr style="background-color:salmon">
-                            <td align="center">3</td>
+                            <td align="center">352</td>
                             <td align="center">25.5</td>
                             <th scope="row">417960</th>
                             <td>Danny Carey</td>
@@ -327,7 +327,7 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                         
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 417959 - Jon Theodore</h2>
-
+                        <H3 class="display-4 text-success" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-up"></i> <b>1</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
                             <tr class="table-success">
                                 <td width="20%">
@@ -454,7 +454,7 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                     
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 417937 - Josh Homme</h2>
-
+                        <H3 class="display-4 text-success" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-up"></i> <b>2</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
                             <tr class="table-success">
                                 <td width="20%">
@@ -583,9 +583,9 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                     
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 417960 - Danny Carey</h2>
-
+                        <H3 class="display-4 text-danger" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-down"></i> <b>352</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td width="20%">
                                     Project Title:
                                 </td>
@@ -593,7 +593,7 @@
                                     Virtual Peer-to-Peer Support for Youth with Chronic Pain
                                 </td>
                             </tr>
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Project Synopsis:
                                 </td>
@@ -601,7 +601,7 @@
                                     Juvenile Idiopathic Arthritis (JIA) is a common chronic childhood illness that is associated with difficulties in social and role functioning as well as physical and emotional symptoms that can negatively impact health-related quality of life (HRQL). While the child and family share management of JIA; adolescents are expected to assume a greater role in disease management as they mature. Greater involvement in self-management could prevent worsening of the disease and symptoms, and facilitate successful transition to adult care. 
                                 </td>
                             </tr>     
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Keywords:
                                 </td>
@@ -609,7 +609,7 @@
                                     Adolescents; Disease Self-Management; Internet; Juvenile Idiopathic Arthritis; Peer Support
                                 </td>
                             </tr>                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Amount Requested:
                                 </td>
@@ -712,9 +712,9 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                     
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 301837 - Michael Shumacher</h2>
-
+                        <H3 class="display-4 text-danger" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-down"></i> <b>351</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td width="20%">
                                     Project Title:
                                 </td>
@@ -722,7 +722,7 @@
                                     Cultivating Healthier Communities: Challenges to Generating Change
                                 </td>
                             </tr>
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Project Synopsis:
                                 </td>
@@ -730,7 +730,7 @@
                                     Evaluating the implementation process of community-wide interventions is an important component in developing a comprehensive understanding of how it plays out. This proposal documents the findings of a unique and innovative community-based strategy in Hamilton Ontario, Neighbourhood Action Strategy (NAS). NAS sets out to improve the well-being of 11 priority communities. By working together with city staff, service providers, and other stakeholders in the community, residents have been planning and enacting initiatives that enhance the health of their community.
                                 </td>
                             </tr>     
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Keywords:
                                 </td>
@@ -738,7 +738,7 @@
                                     Community Based Research; Population Health; Social Determinants Of Health
                                 </td>
                             </tr>                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Amount Requested:
                                 </td>
@@ -842,9 +842,9 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                     
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 417939 - Troy Van Leuween</h2>
-
+                        <H3 class="display-4 text-danger" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-down"></i> <b>350</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td width="20%">
                                     Project Title:
                                 </td>
@@ -852,7 +852,7 @@
                                     The Effect of Magnesium ions on Dental Enamel Properties
                                 </td>
                             </tr>
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Project Synopsis:
                                 </td>
@@ -860,7 +860,7 @@
                                     Respondents were asked about their thoughts on implementation and what held back or led to progress in implementing their various projects. Although communities have been able to generate change, many participants discussed the challenges associated with the implementing an initiative like this including policy barriers, lack of involvement, and working through conflict. This research is relevant and timely as it illustrates how communities can be best supported in enhancing the social, physical, and health related landscape of their neighbourhoods.
                                 </td>
                             </tr>     
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Keywords:
                                 </td>
@@ -868,7 +868,7 @@
                                     Community Based Research; Population Health; Social Determinants Of Health
                                 </td>
                             </tr>                                                      
-                            <tr class="table-success">
+                            <tr class="table-danger">
                                 <td>
                                     Amount Requested:
                                 </td>
@@ -974,7 +974,7 @@
                 <div class="modal-body" style="height: 505px; overflow-y: auto;">
                     
                         <h2 class="display-4" style="font-size: 2rem!important;">App.# 418063 - Maynard James Keenan</h2>
-
+                        <H3 class="display-4 text-success" style="font-size: 1.5rem!important;">ARIA Rank: <i class="fa fa-arrow-up"></i> <b>3</b></H2>
                         <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
                             <tr class="table-success">
                                 <td width="20%">
