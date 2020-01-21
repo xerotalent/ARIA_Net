@@ -31,23 +31,43 @@
 
                         <hr />
 
-                    
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                <div class="display-4" style="font-size: 24px!important;">
+                                    <i class="fa fa-info-circle"></i> Tip!</strong> 
+                                </div>
+                                <p>
+                                Enter any network ID and password
+                                </p>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
 
-                        <form>
+                        <br />
+
+                        <form id="loginForm" class="needs-validation" novalidate>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input id="txtNetworkID" type="text" class="form-control" name="txtNetworkID" placeholder="Network ID">
+                                    <input id="txtNetworkID" type="text" class="form-control" name="txtNetworkID" placeholder="Network ID" required>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Network ID is required.
                                 </div>
                                 <div class="input-group">
-                                    <input id="txtPassword" type="password" class="form-control" name="txtPassword" placeholder="Password">
+                                    <input id="txtPassword" type="password" class="form-control" name="txtPassword" placeholder="Password" required>
+                                </div>                         
+                                <div class="invalid-feedback">
+                                    Password is required
                                 </div>
                             </div>
 
                             <div class="">
-                                <a asp-page="/Step1" class="btn btn-success btn-block">Login</a>
+                                
+                                <button type="submit" class="btn btn-success btn-block">Log In</button>
 
                             </div>
 
+        
                             <div class="text-center p-t-12">
                                 <span class="txt1">
                                     Forgot
@@ -64,7 +84,49 @@
         </div>
     </div>
 
+<!-- End Main Content -->
 
+    <!-- Page-Level jQuery scripts -->
+    
+        
+        @section Scripts {
+                <script>
+
+                (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                    });
+                }, false);
+                })();
+
+                $(function () {
+                    $("#loginForm").submit(function (e) {
+                        e.preventDefault();
+                        var form = $( "#loginForm" );
+                        form.validate();
+                        if(form.valid()) {
+                            window.location.href = "/Step1";
+                        }
+                        
+                    });
+                });
+            
+                </script>
+
+
+        }
+        
 
     
 

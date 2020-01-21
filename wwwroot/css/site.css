@@ -7,6 +7,20 @@ a.navbar-brand {
     word-break: break-all;
 }
 
+.invalid-feedback {
+    width: 100% !important;
+    margin-top: .25rem !important;
+    font-size: 80% !important;
+    color: #dc3545 !important;
+}
+
+.error {
+    width: 100% !important;
+    margin-top: .25rem !important;
+    font-size: 80% !important;
+    color: #dc3545 !important;
+}
+
 
 /* Provide sufficient contrast against white background */
 

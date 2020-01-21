@@ -16,8 +16,14 @@
                 Other - Travel Awards: 2019 - Summer
             </h1>
 
-            <h2 class="text-success"><i class="fa fa-check-circle"></i> Applications Pre-Ranked!
-            </h2>
+            
+
+           <div class="alert alert-success" role="alert">
+                <h2>
+                    <i class="fa fa-check-circle"></i> Applications Pre-Ranked!
+                </h2>
+               
+            </div>               
 
             <hr />
 
@@ -26,7 +32,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <a class="collapsed card-link display-6-heading dis-block" data-toggle="collapse" href="#collapseProgInfo">
+                        <a class="collapsed card-link display-6-heading btn-block" data-toggle="collapse" href="#collapseProgInfo">
                             <i class="fa fa-info-circle"></i> Competition Information
                             <i class="fa fa-chevron-down float-right"></i>
                         </a>
@@ -73,7 +79,7 @@
                                             <b>Number of Applications:</b>
                                         </Td>
                                         <td>
-                                            &nbsp; 52
+                                            &nbsp; 352
                                         </td>
                                     </tr>
 
@@ -126,7 +132,7 @@
                     <a class="btn btn-secondary btn-block btn-sm" href="#" data-toggle="modal" data-target="#modalCriteria"><i class="fa fa-check-square"></i> Evaluation Criteria</a>
 
 
-                    <a class="btn btn-secondary btn-block btn-sm" style="color: white!important;" href="Step1.html">
+                    <a class="btn btn-secondary btn-block btn-sm" style="color: white!important;" href="/Step1">
                         <i class="fa fa-undo"></i> Start Again</a>
                 </p>
             </div>
@@ -135,72 +141,86 @@
 
                 <!-- Application List Grid -->
                 <h2 class="display-5-heading">High/Low Score Summary</h2>
-                <table class="table table-sm table-striped table-responsive">
+                <table class="table table-sm table-striped table-responsive" style="width: 100%;">
                     <thead style="background-color: white; border: white;">
                         <tr>
                             <th scope="col" style="color: #006200;">Rank</th>
                             <th scope="col" style="color: #006200;">ARIA Score</th>
-                            <th scope="col" style="color: #006200;">Ref. #</th>
+                            <th scope="col" style="color: #006200;">App. #</th>
                             <th scope="col" style="color: #006200;">Applicant</th>
                             <th scope="col" style="color: #006200;">Project Title</th>
                             <th scope="col" style="color: #006200;">Amount</th>
-
+                            <th scope="col" style="color: #006200;">Details</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr style="background-color:lightgreen">
                             <td align="center">1</td>
-                            <td align="center">9.54</td>
-                            <th scope="row">293875</th>
+                            <td align="center">30.0</td>
+                            <th scope="row">417959</th>
                             <td>Jon Theodore</td>
-                            <td>Vulvar cancer and vulvectomy: Is sexual life over?</td>
+                            <td>The role of fat-free mass in metabolic health: An opposing perspective</td>
                             <td>$3,600</td>
-                            </tr style="background-color: salmon">
-                            <tr style="background-color:lightgreen">
-                                <td align="center">2</td>
-                                <td align="center">9.24</td>
-                                <th scope="row">103482</th>
-                                <td>Josh Homme</td>
-                                <td>Iron Chelation Attenuates LPS-Induced IL-6 Release in Cystic Fibrosis Epithelial Cells</td>
-                                <td>$3,000</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-sm btn-block" data-target="#modal417959" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td>
+                        </tr>
+                        <tr style="background-color:lightgreen">
+                            <td align="center">2</td>
+                            <td align="center">29.3</td>
+                            <th scope="row">417937</th>
+                            <td>Josh Homme</td>
+                            <td>Iron Chelation Attenuates LPS-Induced IL-6 Release in Cystic Fibrosis Epithelial Cells</td>
+                            <td>$3,000</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-block" data-target="#modal417937" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td>
+                        </tr>
+                        <tr style="background-color: lightgreen">
+                            <td align="center">51</td>
+                            <td align="center">29.2</td>
+                            <th scope="row">418063</th>
+                            <td>Maynard James Keenan</td>
+                            <td>Salivary Flow Rates in Normal Healthy Aging: A Scoping Review of the Evidence</td>
+                            <td>$1,600</td>
+                           <td>
+                                <a href="#" class="btn btn-info btn-success btn-block" data-target="#modal418063" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td> 
+                        </tr>     
+                        <tr style="background-color: salmon">
+                            <td align="center">50</td>
+                            <td align="center">28.0</td>
+                            <th scope="row">417939</th>
+                            <td>Troy Van Leuween</td>
+                            <td>The Effect of Magnesium ions on Dental Enamel Properties</td>
+                            <td>$2,300</td>
+                           <td>
+                                <a href="#" class="btn btn-danger btn-block" data-target="#modal417939" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td> 
+                        </tr>                                           
+                        <tr style="background-color: salmon">
+                            <td align="center">49</td>
+                            <td align="center">26.4</td>
+                            <th scope="row">301837</th>
+                            <td>Michael Shumacher</td>
+                            <td>Cultivating Healthier Communities: Challenges to Generating Change</td>
+                            <td>$4,900</td>
+                           <td>
+                                <a href="#" class="btn btn-danger btn-block" data-target="#modal301837" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td>                               
+                        </tr>
+                        <tr style="background-color:salmon">
+                            <td align="center">3</td>
+                            <td align="center">25.5</td>
+                            <th scope="row">417960</th>
+                            <td>Danny Carey</td>
+                            <td>Virtual Peer-to-Peer Support for Youth with Chronic Pain</td>
+                            <td>$900</td>
+                           <td>
+                                <a href="#" class="btn btn-danger btn-block" data-target="#modal417960" data-toggle="modal"><i class="fa fa-bar-chart"></i></a>
+                            </td>                            
+                        </tr>
 
-                            </tr>
-                            <tr style="background-color:lightgreen">
-                                <td align="center">3</td>
-                                <td align="center">8.35</td>
-                                <th scope="row">100093</th>
-                                <td>Danny Carey</td>
-                                <td>Virtual Peer-to-Peer Support for Youth with Chronic Pain</td>
-                                <td>$900</td>
-                            </tr>
-
-
-                            <tr style="background-color: salmon">
-                                <td align="center">49</td>
-                                <td align="center">3.35</td>
-                                <th scope="row">301837</th>
-                                <td>Michael Shumacher</td>
-                                <td>Cultivating Healthier Communities: Challenges to Generating Change</td>
-                                <td>$4,900</td>
-                            </tr>
-                            <tr style="background-color: salmon">
-                                <td align="center">50</td>
-                                <td align="center">2.35</td>
-                                <th scope="row">117385</th>
-                                <td>Troy Van Leuween</td>
-                                <td>The Effect of Magnesium ions on Dental Enamel Properties</td>
-                                <td>$2,300</td>
-
-                            </tr>
-                            <tr style="background-color: salmon">
-                                <td align="center">51</td>
-                                <td align="center">2.29</td>
-                                <th scope="row">117385</th>
-                                <td>Maynard James Keenan</td>
-                                <td>Salivary Flow Rates in Normal Healthy Aging: A Scoping Review of the Evidence</td>
-                                <td>$1,600</td>
-
-                            </tr>
                     </tbody>
                 </table>
 
@@ -209,7 +229,7 @@
 
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
-                        <a class="btn btn-primary btn-block" href="#" data-target="#modalAnalytics" data-toggle="modal"><i class="fa fa-bar-chart"></i> Competition Analytics</a>
+                        <a class="btn btn-primary btn-block" href="#" data-target="#modalAnalytics" data-toggle="modal"><i class="fa fa-pie-chart"></i> Competition Analytics</a>
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
@@ -296,6 +316,787 @@
         </div>
     </div>
 
+
+
+    <!--======================================= -->
+    <!-- APPLICATION SCORING DETAILS MODALS -->
+    <!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal417959" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading"> 
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 417959 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                        
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 417959 - Jon Theodore</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    The role of fat-free mass in metabolic health: An opposing perspective
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    The metabolic syndrome (MetS) increases the risk of cardiovascular diseases and type 2 diabetes. Since fat-free mass (FFM) is a metabolically active tissue, it is generally recognized that a greater FFM has a protective effect on the risk of developing MetS. This assumption is often based on studies reporting FFM as a percentage of body weight (BW). However, recent work from our group suggests that greater absolute FFM could be deleterious to metabolic health. 
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Composition Corporelle; Santé Métabolique; Syndrome Métabolique; Vieillissement
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $3,600
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.0</td>
+                                <td class="text-center" width="20%">4.3</td>
+                                <td class="text-center" width="20%">7.5%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">2.381%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">0%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">4.761%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">4.6</td>
+                                <td class="text-center">2.222%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">2.381%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">3.9</td>
+                                <td class="text-center">2.564%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>30.0</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>                                                                                                
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal417937" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 417937 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 417937 - Josh Homme</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    Iron Chelation Attenuates LPS-Induced IL-6 Release in Cystic Fibrosis Epithelial Cells
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    Of all the deadly genetic diseases, cystic fibrosis (CF) is the most common one affecting Canadian children and young adults. CF results from a genetic change in a protein called CFTR (CF transmembrane conductance regulator). In the lungs, this protein has the role of making sure salts and fluids easily come in and out of cells to form a protective mucous barrier against germs. In CF patients however, because the CFTR protein is not functioning properly, the mucous barrier becomes thick and viscous which is an ideal environment for bacteria to grow and makes the lung chronically inflammed.
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Ics Travel Awards
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $3,000
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.5</td>
+                                <td class="text-center" width="20%">4.0</td>
+                                <td class="text-center" width="20%">12.5%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">0%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">12.5%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">0%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">7.5%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">3.8</td>
+                                <td class="text-center">10.526%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">4.0</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">12.54%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>29.3</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>      
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>     
+
+
+<!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal417960" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 417960 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 417960 - Danny Carey</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    Virtual Peer-to-Peer Support for Youth with Chronic Pain
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    Juvenile Idiopathic Arthritis (JIA) is a common chronic childhood illness that is associated with difficulties in social and role functioning as well as physical and emotional symptoms that can negatively impact health-related quality of life (HRQL). While the child and family share management of JIA; adolescents are expected to assume a greater role in disease management as they mature. Greater involvement in self-management could prevent worsening of the disease and symptoms, and facilitate successful transition to adult care. 
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Adolescents; Disease Self-Management; Internet; Juvenile Idiopathic Arthritis; Peer Support
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $900
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.8</td>
+                                <td class="text-center" width="20%">3.7</td>
+                                <td class="text-center" width="20%">29.729%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.8</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">37.142%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">4.7</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">34.285%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">4.6</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">31.428%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.8</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">14.285%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">4.6</td>
+                                <td class="text-center">3.6</td>
+                                <td class="text-center">27.777%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">4.9</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">40.0%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>25.5</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>   
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal301837" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 301837 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 301837 - Michael Shumacher</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    Cultivating Healthier Communities: Challenges to Generating Change
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    Evaluating the implementation process of community-wide interventions is an important component in developing a comprehensive understanding of how it plays out. This proposal documents the findings of a unique and innovative community-based strategy in Hamilton Ontario, Neighbourhood Action Strategy (NAS). NAS sets out to improve the well-being of 11 priority communities. By working together with city staff, service providers, and other stakeholders in the community, residents have been planning and enacting initiatives that enhance the health of their community.
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Community Based Research; Population Health; Social Determinants Of Health
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $4,900
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.8</td>
+                                <td class="text-center" width="20%">3.7</td>
+                                <td class="text-center" width="20%">29.729%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">2.325%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">3.7</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">5.714%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">4.1</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">17.142%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.8</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">14.285%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">3.6</td>
+                                <td class="text-center">16.666%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">3.4</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">2.941%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>26.4</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>   
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+    <!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal417939" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 417939 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 417939 - Troy Van Leuween</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    The Effect of Magnesium ions on Dental Enamel Properties
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    Respondents were asked about their thoughts on implementation and what held back or led to progress in implementing their various projects. Although communities have been able to generate change, many participants discussed the challenges associated with the implementing an initiative like this including policy barriers, lack of involvement, and working through conflict. This research is relevant and timely as it illustrates how communities can be best supported in enhancing the social, physical, and health related landscape of their neighbourhoods.
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Community Based Research; Population Health; Social Determinants Of Health
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $2,300
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.1</td>
+                                <td class="text-center" width="20%">3.7</td>
+                                <td class="text-center" width="20%">10.81%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">2.325%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">3.7</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">5.714%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">4.7</td>
+                                <td class="text-center">4.5</td>
+                                <td class="text-center">4.444%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.8</td>
+                                <td class="text-center">4.8</td>
+                                <td class="text-center">0%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">3.4</td>
+                                <td class="text-center">3.6</td>
+                                <td class="text-center">5.88%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">3.4</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">2.941%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>28.0</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>   
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+    <!--======================================= -->
+
+    <div class="modal fade alert" role="alert" id="modal418063" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-info">
+                    <h5 class="display-5-heading">
+                        <i class="fa fa-bar-chart" style="font-size: 18pt;"></i> Scoring Details: App.# 418063 (201901ISU)</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="height: 505px; overflow-y: auto;">
+                    
+                        <h2 class="display-4" style="font-size: 2rem!important;">App.# 418063 - Maynard James Keenan</h2>
+
+                        <table class="table table-sm table-responsive" style="width: 100%!important; font-size: 80%; font-weight: 400;">                                                      
+                            <tr class="table-success">
+                                <td width="20%">
+                                    Project Title:
+                                </td>
+                                <td width="80%">
+                                    Salivary Flow Rates in Normal Healthy Aging: A Scoping Review of the Evidence
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    Project Synopsis:
+                                </td>
+                                <td>
+                                    Peer support is proposed as one solution to address this gap in clinical care. Providing face-to-face peer support via Internet interventions (Skype) is an innovative approach to improve the accessibility and acceptability of self-management and peer support programs for youth with JIA. The proposed trial will determine the feasibility of the "JIA Virtual Peer-to-Peer (VP2P) support program" on health outcomes in teens with JIA.
+                                </td>
+                            </tr>     
+                            <tr class="table-success">
+                                <td>
+                                    Keywords:
+                                </td>
+                                <td>
+                                    Adolescents; Disease Self-Management; Internet; Juvenile Idiopathic Arthritis; Peer Support
+                                </td>
+                            </tr>                                                      
+                            <tr class="table-success">
+                                <td>
+                                    Amount Requested:
+                                </td>
+                                <td>
+                                    $1,600
+                                </td>
+                            </tr>
+                        </table> 
+
+            
+                   
+
+                    <h2 class="display-4" style="font-size: 2rem!important;">ARIA AI Score Results</h2>
+                    
+                    <table class="table table-sm table-striped table-responsive" style="width: 100%!important;">
+                        <thead style="background-color: white; border: white;">
+                            <tr>
+                                <th scope="col" style="font-size: 12pt; font-weight: 400; color: #006200;">Criteria</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">Historical Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">ARIA Score</th>
+                                <th scope="col" class="text-center" style="font-size: 12pt; font-weight: 400; color: #006200;">% Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Relevance of the presentation</td>
+                                <td class="text-center" width="20%">4.4</td>
+                                <td class="text-center" width="20%">4.2</td>
+                                <td class="text-center" width="20%">10.81%</td>
+                            </tr>
+                            <tr>
+                                <td>Relevance of the conference</td>
+                                <td class="text-center">4.3</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">4.761%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on career</td>
+                                <td class="text-center">3.7</td>
+                                <td class="text-center">3.5</td>
+                                <td class="text-center">5.714%</td>
+                            </tr>       
+                            <tr>
+                                <td>Impact on health research</td>
+                                <td class="text-center">3.3</td>
+                                <td class="text-center">3.6</td>
+                                <td class="text-center">9.09%</td>
+                            </tr>    
+                            <tr>
+                                <td>Strength of the applicant</td>
+                                <td class="text-center">4.1</td>
+                                <td class="text-center">4.2</td>
+                                <td class="text-center">2.439%</td>
+                            </tr>   
+                            <tr>
+                                <td>Clarity of the application</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">4.6</td>
+                                <td class="text-center">4.545%</td>
+                            </tr>   
+                            <tr>
+                                <td>Budget justification</td>
+                                <td class="text-center">4.4</td>
+                                <td class="text-center">4.7</td>
+                                <td class="text-center">6.818%</td>
+                            </tr>     
+                            <tr class="table-primary">
+                                <td></td>
+                                <td class="text-center"><b>TOTAL ARIA SCORE</b></td>
+                                <td class="text-center"><b>29.2</b></td>
+                                <td class="text-center"></td>                                
+                            </tr>
+
+                        </tbody>
+                    </table>   
+     
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!--======================================= -->
+    <!--======================================= -->    
 
     <!-- Display Evaluation Criteria -->
     <div class="modal fade alert" role="alert" id="modalCriteria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabela" aria-hidden="true">
