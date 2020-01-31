@@ -12,7 +12,7 @@
         <div class="jumbotron" style="padding: 2rem 2rem !important; background-image: url('https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');">
 
             <h1 class="display-4">
-                Other - Travel Awards: 2019 - Summer
+                <span id="program"></span> - <span id="competition"></span>
             </h1>
 
             
@@ -274,6 +274,38 @@
         @section Scripts {
                 <script>
 
+
+                    $( document ).ready(function() {
+
+                        //Get query strings
+                        var programID = localStorage.getItem("programID");
+                        var competitionID = localStorage.getItem("competitionID");
+
+                        //Retrieve names
+                        var programName = "Program " + programID;
+                        var compName = "Competition " + competitionID;
+
+
+                        $("#program").html(programName);
+                        $("#competition").html(compName);
+                        
+                    });
+
+                    //Retrieves a list of query strings
+                    function getUrlVars()
+                    {
+                        var vars = [], hash;
+                        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                        for(var i = 0; i < hashes.length; i++)
+                        {
+                            hash = hashes[i].split('=');
+                            vars.push(hash[0]);
+                            vars[hash[0]] = hash[1];
+                        }
+                        return vars;
+                    }   
+
+            
                 
                     //Simulates a wait while the server is ranking
                             //  the applications

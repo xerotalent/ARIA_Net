@@ -13,7 +13,7 @@
         <div class="jumbotron" style="padding: 2rem 2rem !important; background-image: url('https://images.pexels.com/photos/2276928/pexels-photo-2276928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-position: 50% 50%; background-size: cover;">
 
             <h1 class="display-4">
-                Other - Travel Awards: 2019 - Summer
+                <span id="program"></span> - <span id="competition"></span> 
             </h1>
 
            <div class="alert alert-success" role="alert">
@@ -232,7 +232,7 @@
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 5px;">
-                        <a class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Push to RNet</a>
+                        <a class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modalConfirm"><i class="fa fa-upload"></i> Send to GMS</a>
                     </div>
                 </div>
 
@@ -261,7 +261,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <p><u>WARNING:</u> Sending the pre-scores to RNet cannot be undone!</p>
+                    <p><u>WARNING:</u> Sending the pre-scores to the Master Grants Management System (GMS) cannot be undone!</p>
                     <br />
                     <p>
                         Are you sure you wish to continue?
@@ -273,7 +273,7 @@
                 </div>
                 <div id="panelEISCommands" class="modal-footer">
                     <button type="button" class="btn btn-warning" id="cmdEISCancel" data-dismiss="modal">Cancel</button>&nbsp;
-                    <button type='button' class="btn btn-success" id="cmdEIS"><i class="fa fa-upload"></i> Send To RNet</button>
+                    <button type='button' class="btn btn-success" id="cmdEIS"><i class="fa fa-upload"></i> Send To GMS</button>
                 </div>
             </div>
         </div>
@@ -1523,6 +1523,20 @@
                 // Hide the loading cog on page load
             $( document ).ready(function() {
                 $('#panelSendingToEIS').hide();
+
+                //Get query strings
+                var programID = localStorage.getItem("programID");
+                var competitionID = localStorage.getItem("competitionID");
+
+                //Retrieve names
+                var programName = "Program " + programID;
+                var compName = "Competition " + competitionID;
+
+
+                $("#program").html(programName);
+                $("#competition").html(compName);
+              
+
             });
 
             //Code to display animated loading of results to EIS

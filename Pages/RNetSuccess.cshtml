@@ -11,10 +11,10 @@
 
         <!-- JUMBOTRON-->
         <div class="jumbotron" style="padding: 2rem 2rem !important; background-color: white;">
-            <h1 class="display-4">Other - Travel Awards: 2019 - Summer</h1>
+            <h1 class="display-4"> <span id="program"></span> - <span id="competition"></span></h1>
             <br />
             <div class="text-center">
-                <h2 class="text-success"><i class="fa fa-check-circle"></i> Pre-Scores and Pre-Ranking sent to EIS!</h2>
+                <h2 class="text-success"><i class="fa fa-check-circle"></i> Pre-Scores and Pre-Ranking sent to Master Grants Management System!</h2>
 
                 <img src="https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-shake-new-mail.gif" class="img-fluid">
                 <p class="lead">
@@ -37,3 +37,27 @@
 
 
         <!-- End Main Content -->
+
+            @section Scripts {
+                <script>
+
+                        // Hide the loading cog on page load
+                    $( document ).ready(function() {
+
+                        //Get query strings
+                        var programID = localStorage.getItem("programID");
+                        var competitionID = localStorage.getItem("competitionID");
+
+                        //Retrieve names
+                        var programName = "Program " + programID;
+                        var compName = "Competition " + competitionID;
+
+
+                        $("#program").html(programName);
+                        $("#competition").html(compName);
+                    
+
+                    });
+
+                </Script>
+            }
